@@ -5,7 +5,7 @@ import { site, socials, whatsappLink } from "@/lib/site";
 export default function Footer() {
   return (
     <footer className="bg-forest text-cream">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 sm:gap-12 sm:py-16 lg:grid-cols-4 lg:px-8">
         <div>
           <Link
             href="/"

@@ -20,10 +20,10 @@ export default function ContactPage() {
         image="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1600&q=80"
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           <Reveal>
-            <div className="h-full rounded-3xl bg-white p-7 shadow-lg shadow-forest/5">
+            <div className="h-full rounded-3xl bg-white p-6 shadow-lg shadow-forest/5 sm:p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-petal-light text-petal-dark">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path d="M12 22c5-4.5 8-8.5 8-12a8 8 0 1 0-16 0c0 3.5 3 7.5 8 12Zm0-9a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
@@ -36,7 +36,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delay={80}>
-            <div className="h-full rounded-3xl bg-white p-7 shadow-lg shadow-forest/5">
+            <div className="h-full rounded-3xl bg-white p-6 shadow-lg shadow-forest/5 sm:p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366]/15 text-[#128C7E]">
                 <Icon name="whatsapp" />
               </span>
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delay={160}>
-            <div className="h-full rounded-3xl bg-white p-7 shadow-lg shadow-forest/5">
+            <div className="h-full rounded-3xl bg-white p-6 shadow-lg shadow-forest/5 sm:p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage/20 text-forest-light">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path d="M4 4h16a2 2 0 0 1 2 2v.4l-10 6L2 6.4V6a2 2 0 0 1 2-2Zm18 4.7V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.7l10 6 10-6Z" />
@@ -74,7 +74,7 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delay={240}>
-            <div className="h-full rounded-3xl bg-white p-7 shadow-lg shadow-forest/5">
+            <div className="h-full rounded-3xl bg-white p-6 shadow-lg shadow-forest/5 sm:p-7">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/15 text-gold">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                   <path d="M12 22a10 10 0 1 1 10-10c0 1.7-1.3 3-3 3h-2a2 2 0 0 0-1.5 3.3c.3.4.5.8.5 1.2 0 .8-.7 1.5-2 1.5H12Zm-5.5-9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm3.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
@@ -92,7 +92,7 @@ export default function ContactPage() {
           </Reveal>
         </div>
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
+        <div className="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-2">
           <Reveal>
             <div className="mb-8 flex items-center gap-3">
               <h2 className="text-3xl font-semibold font-display">

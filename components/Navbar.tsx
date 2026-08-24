@@ -48,7 +48,7 @@ export default function Navbar() {
           {site.name}
         </Link>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-8 lg:flex">
           {links.map((link) => (
             <li key={link.href}>
               <Link
@@ -79,7 +79,7 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-forest/5 text-forest md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-forest/5 text-forest lg:hidden"
         >
           <svg
             viewBox="0 0 24 24"
@@ -99,7 +99,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`overflow-hidden transition-all duration-300 md:hidden ${
+        className={`overflow-hidden transition-all duration-300 lg:hidden ${
           open ? "max-h-96 border-t border-forest/10" : "max-h-0"
         }`}
       >

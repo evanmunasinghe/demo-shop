@@ -30,7 +30,7 @@ const occasions = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-forest/15 bg-white px-4 py-3 text-sm text-forest outline-none transition placeholder:text-forest/40 focus:border-petal focus:ring-2 focus:ring-petal/25";
+  "w-full rounded-xl border border-forest/15 bg-white px-4 py-3 text-base text-forest outline-none transition placeholder:text-forest/40 focus:border-petal focus:ring-2 focus:ring-petal/25 sm:text-sm";
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);

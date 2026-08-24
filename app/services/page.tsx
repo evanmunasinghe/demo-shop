@@ -97,7 +97,7 @@ export default function ServicesPage() {
         image="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1600&q=80"
       />
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8 lg:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
             What We Offer
@@ -123,7 +123,7 @@ export default function ServicesPage() {
                     {service.price}
                   </span>
                 </div>
-                <div className="flex flex-1 flex-col p-6">
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
                   <h3 className="text-xl font-semibold font-display">
                     {service.title}
                   </h3>
@@ -158,7 +158,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-forest py-20 text-cream lg:py-28">
+      <section className="bg-forest py-16 text-cream sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sage">
@@ -186,7 +186,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-5 py-20 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-4xl px-5 py-16 sm:py-20 lg:px-8 lg:py-28">
         <Reveal className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
             Good to Know
@@ -199,7 +199,7 @@ export default function ServicesPage() {
           {faqs.map((faq) => (
             <details
               key={faq.q}
-              className="group rounded-2xl border border-forest/10 bg-white p-6 shadow-sm open:shadow-md"
+              className="group rounded-2xl border border-forest/10 bg-white p-5 shadow-sm open:shadow-md sm:p-6"
             >
               <summary className="cursor-pointer list-none text-left font-semibold marker:hidden [&::-webkit-details-marker]:hidden">
                 <span className="mr-3 inline-block text-petal-dark transition group-open:rotate-45">+</span>

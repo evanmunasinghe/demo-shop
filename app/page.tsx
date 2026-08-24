@@ -73,7 +73,7 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <section className="relative flex min-h-[92vh] items-center overflow-hidden">
+      <section className="relative flex min-h-[92svh] items-center overflow-hidden">
         <Image
           src="/floral-1.jpg"
           alt="Fresh flower arrangement"
@@ -95,19 +95,19 @@ export default function Home() {
               Handcrafted bouquets, weddings and events — designed with farm-fresh
               blooms and delivered same day.
             </p>
-            <div className="mt-9 flex flex-wrap gap-4">
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
                 href={whatsappLink("Hi! I'd like to order a bouquet.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-full bg-petal px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-petal-dark"
+                className="flex items-center justify-center gap-2 rounded-full bg-petal px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-petal-dark"
               >
                 <Icon name="whatsapp" className="h-5 w-5" />
                 Order on WhatsApp
               </a>
               <Link
                 href="/services"
-                className="rounded-full border border-white/40 px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-white hover:text-forest"
+                className="flex items-center justify-center rounded-full border border-white/40 px-8 py-4 text-sm font-semibold uppercase tracking-widest transition hover:bg-white hover:text-forest"
               >
                 Our Services
               </Link>
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8 lg:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
             Fresh This Week
@@ -147,11 +147,11 @@ export default function Home() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:gap-8 md:grid-cols-3 lg:mt-14">
           {collections.map((item, i) => (
             <Reveal key={item.title} delay={i * 100}>
               <article className="group overflow-hidden rounded-3xl bg-white shadow-lg shadow-forest/5 transition duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-56 overflow-hidden sm:h-64">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -160,7 +160,7 @@ export default function Home() {
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <h3 className="text-xl font-semibold font-display">
                     {item.title}
                   </h3>
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-forest py-20 text-cream lg:py-28">
+      <section className="bg-forest py-16 text-cream sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sage">
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8 lg:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
             Kind Words
@@ -224,7 +224,7 @@ export default function Home() {
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
-              <figure className="flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-7 shadow-sm">
+              <figure className="flex h-full flex-col rounded-3xl border border-forest/10 bg-white p-6 shadow-sm sm:p-7">
                 <div className="text-gold" aria-label="5 out of 5 stars">
                   ★★★★★
                 </div>

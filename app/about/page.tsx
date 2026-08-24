@@ -43,7 +43,7 @@ export default function AboutPage() {
         image="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=1600&q=80"
       />
 
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:gap-12 sm:py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
         <Reveal>
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md">
             <Image
@@ -87,7 +87,7 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="bg-cream-dark/60 py-20 lg:py-28">
+      <section className="bg-cream-dark/60 py-16 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
@@ -119,7 +119,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20 lg:px-8 lg:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-petal-dark">
             The Team

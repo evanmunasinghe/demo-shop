@@ -16,12 +16,18 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background: var(--color-cream);
   color: var(--color-forest);
   font-family: var(--font-body);
+  overflow-x: clip;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
