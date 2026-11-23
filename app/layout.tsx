@@ -23,6 +23,13 @@ export const metadata: Metadata = {
   },
   description:
     "Handcrafted floral arrangements, wedding flowers, subscriptions and event styling. Order fresh blooms on WhatsApp with same-day delivery.",
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title: `${site.name} | Flower Shop`,
+    description: site.tagline,
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({
